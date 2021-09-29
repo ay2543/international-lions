@@ -19,20 +19,19 @@ library(tidyverse)
 data <- read_csv("filtered_data.csv")  # Should take ~15 s
 
 # Quickly check column names to be sure
-colnames(data) # 22 variables
+colnames(data) # 20 variables
 
 
 # [1] "X1"                                "cons_chmi"                        
 # [3] "rx_gpi2_17_pmpm_cost_t_12-9-6m_b4" "est_age"                          
-# [5] "atlas_pct_laccess_seniors15"       "atlas_percapitainc"               
-# [7] "rwjf_uninsured_adults_pct"         "atlas_type_2015_mining_no"        
-# [9] "atlas_povertyallagespct"           "covid_vaccination"                
-# [11] "atlas_pct_laccess_lowi15"          "hum_region"                       
-# [13] "atlas_hh65plusalonepct"            "sex_cd"                           
-# [15] "lang_spoken_cd"                    "atlas_pct_sbp15"                  
-# [17] "rwjf_resident_seg_black_inx"       "cons_rxadhm"                      
-# [19] "atlas_medhhinc"                    "cons_lwcm07"                      
-# [21] "atlas_low_education_2015_update"   "race_cd"   
+# [5] "atlas_percapitainc"                "rwjf_uninsured_adults_pct"          
+# [7] "atlas_type_2015_mining_no"         "atlas_povertyallagespct"
+# [9] "covid_vaccination"                 "hum_region"                                 
+# [11] "atlas_hh65plusalonepct"            "sex_cd"                           
+# [13] "lang_spoken_cd"                    "atlas_pct_sbp15"                  
+# [15] "rwjf_resident_seg_black_inx"       "cons_rxadhm"                      
+# [17] "atlas_medhhinc"                    "cons_lwcm07"                      
+# [19] "atlas_low_education_2015_update"   "race_cd"   
 
 
 # The first column has no purpose: X1 is just the chronological number or entries
@@ -41,16 +40,15 @@ data_final <- data[,-1]
 colnames(data_final)
 
 # [1] "cons_chmi"                         "rx_gpi2_17_pmpm_cost_t_12-9-6m_b4"
-# [3] "est_age"                           "atlas_pct_laccess_seniors15"      
-# [5] "atlas_percapitainc"                "rwjf_uninsured_adults_pct"        
-# [7] "atlas_type_2015_mining_no"         "atlas_povertyallagespct"          
-# [9] "covid_vaccination"                 "atlas_pct_laccess_lowi15"         
-# [11] "hum_region"                        "atlas_hh65plusalonepct"           
-# [13] "sex_cd"                            "lang_spoken_cd"                   
-# [15] "atlas_pct_sbp15"                   "rwjf_resident_seg_black_inx"      
-# [17] "cons_rxadhm"                       "atlas_medhhinc"                   
-# [19] "cons_lwcm07"                       "atlas_low_education_2015_update"  
-# [21] "race_cd"            
+# [3] "est_age"                           "atlas_percapitainc"      
+# [5] "rwjf_uninsured_adults_pct"         "atlas_type_2015_mining_no"
+# [7] "atlas_povertyallagespct"           "covid_vaccination"         
+# [9] "hum_region"                        "atlas_hh65plusalonepct"           
+# [11] "sex_cd"                            "lang_spoken_cd"                   
+# [13] "atlas_pct_sbp15"                   "rwjf_resident_seg_black_inx"      
+# [15] "cons_rxadhm"                       "atlas_medhhinc"                   
+# [17] "cons_lwcm07"                       "atlas_low_education_2015_update"  
+# [19] "race_cd"            
 
 
 

@@ -7,7 +7,7 @@ library(readr)
 library(tidyverse)
 
 
-data <- read_csv("filtered_data.csv")  # Should take ~15 s
+data <- read_csv("filtered_data.csv")  
 
 data_final <- data[,-1]
 colnames(data_final)
